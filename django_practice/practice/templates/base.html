@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/css/nav.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <ul class="flex-nav">
+            <li><a href="{% url 'home' %}">首頁</a></li>
+            <li><a href="{% url 'anime' %}">新番介紹</a></li>
+            <li><a href="#">技術欄</a></li>
+            <li><a href="#">關於 DanDan</a></li>
+        </ul>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
